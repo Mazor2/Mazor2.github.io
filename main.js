@@ -54,7 +54,7 @@ function datos(){
     api2.onreadystatechange = function(){
         if(this.status === 200 && this.readyState == 4){
             let datoss2 = JSON.parse(this.responseText);
-            console.log(d3+'3');
+
             document.getElementById("rname").textContent =datoss2['results']['0']['name']['first']+' '+datoss2['results']['0']['name']['last'];
             document.getElementById("rphone").textContent = datoss2['results']['0']['phone'];
             document.getElementById("rcorreo").textContent =  'E: '+datoss2['results']['0']['email'];
