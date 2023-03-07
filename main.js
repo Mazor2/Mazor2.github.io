@@ -28,18 +28,36 @@ function datos(){
                     document.getElementById("sl").textContent = 'Portugués';
                     document.getElementById("rem").textContent = 'McDonalds';
                     document.getElementById("pro").textContent = 'Programador';
+                    document.getElementById("work").textContent = 'Desarrollador(Python)';
+                    document.getElementById("awork").textContent = '2016-2020';
+                    document.getElementById("lwork").textContent = 'Spain';
+                    document.getElementById("uni").textContent = 'Universidad de Madrid';
+                    document.getElementById("auni").textContent = '2002-2009';
+                    document.getElementById("luni").textContent = 'Spain';
                 break;
                 case 2:
                     document.getElementById("fl").textContent = 'Español';
                     document.getElementById("sl").textContent = 'Japonés';
                     document.getElementById("rem").textContent = 'Chevrolet';
-                    document.getElementById("pro").textContent = 'Albañil';
+                    document.getElementById("pro").textContent = 'Arquitecto';
+                    document.getElementById("work").textContent = 'Chevrolet';
+                    document.getElementById("awork").textContent = '2013-2017';
+                    document.getElementById("lwork").textContent = 'Uruguay';
+                    document.getElementById("uni").textContent = 'Universidad de Montevideo';
+                    document.getElementById("auni").textContent = '1998-2004';
+                    document.getElementById("luni").textContent = 'Uruguay';
                 break;
                 case 3:
                     document.getElementById("fl").textContent = 'Árabe';
                     document.getElementById("sl").textContent = 'Ruso';
                     document.getElementById("rem").textContent = 'Mizuki';
                     document.getElementById("pro").textContent = 'Chef';
+                    document.getElementById("work").textContent = 'Cocinero';
+                    document.getElementById("awork").textContent = '2014-2015';
+                    document.getElementById("lwork").textContent = 'Japan';
+                    document.getElementById("uni").textContent = 'Universidad de Kyoto';
+                    document.getElementById("auni").textContent = '2007-20010';
+                    document.getElementById("luni").textContent = 'Japan';
                 break;
             }
            
@@ -63,21 +81,7 @@ function datos(){
 
         }
     }
-    //大学の情報
-    let url3 = 'http://universities.hipolabs.com/search?name=middle';
-    const api3 = new XMLHttpRequest();
-    api3.open('GET', url3, true);
-    api3.send();
-    api3.onreadystatechange = function(){
-        if(this.status === 200 && this.readyState == 4){
-            let d3 = JSON.parse(this.responseText);
-            console.log(d3);
 
-            
-           
-
-        }
-    }
     
 }
 //
